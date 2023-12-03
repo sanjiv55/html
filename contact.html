@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            display: none; /* Hide the header initially */
+            background-color: #e09c9c;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: rgb(56, 144, 56);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav img {
+            max-width: 100px; /* Set the max width for the logo */
+        }
+
+        .contact {
+            padding: 20px;
+            text-align: center;
+            margin-top: 80px; /* Add space for the fixed navbar */
+        }
+
+        .map {
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        /* Add more styling as needed */
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <title>PizzaPal - Contact</title>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <img src="logo.png" alt="PizzaPal Logo">
+       
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact&nbsp;&nbsp;</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact">
+         <p style="font-size: 40px; color: green; font-family:Times;">We would love to hear from you</p>
+         <p style="color: green;"> Drop us line to say hello </p>
+
+
+        <!-- Google Maps Integration -->
+        <div class="map">
+            <!-- You can embed your Google Maps iframe here -->
+            <!-- Example: <iframe src="your_google_maps_embed_link" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Visit Us</h3>
+            <p>457, Hudco Colony, Neemuch</p>
+
+            <h3>Call Us</h3>
+            <p>Phone: 8718842269</p>
+
+            <h3>Email Us</h3>
+            <p>Email: PizzaPal1@gmail.com</p>
+            <div class="contact-info">
+           
+        </div>
+            </section>
+          <!-- Contact Form -->
+             <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+              </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 PizzaPal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to show the header when scrolling
+        window.onscroll = function () {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.querySelector('header').style.display = 'block';
+            } else {
+                document.querySelector('header').style.display = 'none';
+            }
+        };
+    </script>
+
+</body>
+
+</html>
